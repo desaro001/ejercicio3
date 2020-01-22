@@ -7,16 +7,23 @@
     <title>Document</title>
     <script>
         function validar(){
-            
+            var mail=document.getElementById("miemail").value; 
+            var psw=document.getElementById("mipassword").value; 
+
+            if (mail=="x@gmail.com" && psw=="arturo"){
+                alert("perfecto");
+            } else {
+                alert("impostor");
+            }
         }
     </script>
         
 </head>
 <body>
     <form action="">
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
+        <input type="email" name="" id="miemail">
+        <input type="password" name="" id="mipassword">
+        <input type="button" value="validar" onclick="validar()">
     </form>
 </body>
 </html>    
